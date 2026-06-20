@@ -1,5 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar"
-import { useLocation } from 'react-router-dom'
+import { useLocation } from '@remix-run/react'
 import { IconComponent, IconName } from "../icon";
 
 export default function Header(){

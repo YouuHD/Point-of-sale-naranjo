@@ -20,6 +20,7 @@ const iconsMap = {
     rol: RiShieldCheckLine,
     report: RiGitRepositoryLine,
     code: RiBarcodeBoxLine,
+    archive: RiArchive2Line,
 }
 
 export type IconName = keyof typeof iconsMap
@@ -31,5 +32,10 @@ interface IconProps {
 
 export function IconComponent( { value, className }: IconProps) {
     const Icon = iconsMap[value]
+    
+    if(!Icon){
+        console.warn(`Icono no encontrado para el valor: ${value}`)
+        return null
+    }
     return <Icon className={className}/>
 }

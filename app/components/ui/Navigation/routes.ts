@@ -9,7 +9,7 @@ type Route = {
 
 export const routes: Route[] = [
     {
-        name: 'Dashboard',
+        name: 'Inicio',
         path: '/',
         icon: 'home',
     },
