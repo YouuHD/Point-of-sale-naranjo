@@ -2,7 +2,7 @@ import { Link } from '@remix-run/react'
 import { routes } from './routes'
 import { Button } from '../button'
 import { IconComponent } from '../icon'
-import { useLocation } from 'react-router-dom'
+import { useLocation } from '@remix-run/react'
 import { Fragment } from 'react/jsx-runtime'
 import { FaAngleDown } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
