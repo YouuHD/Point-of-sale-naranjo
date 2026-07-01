@@ -6,7 +6,7 @@ export default function Header(){
     const location = useLocation();
     
     type PagePaths = 
-        '/' | '/pos' | '/inventory' | 
+        '/' | '/pos' | '/new_pos' | '/inventory' | 
         '/admin' | '/admin/users' | 
         '/admin/products' | '/admin/categories' | 
         '/admin/rol' | '/admin/report' | '/admin/code';
@@ -22,6 +22,7 @@ export default function Header(){
     const pageName: Record<PagePaths, PageNames> = {
         '/': 'Dashboard',
         '/pos': 'Punto de Venta',
+        '/new_pos': 'Punto de Venta',
         '/inventory': 'Inventario',
         '/admin': 'Administración',
         '/admin/users': 'Usuarios',
@@ -39,6 +40,7 @@ export default function Header(){
     const iconContent: Record<string, IconName> = {
         '/': 'home',
         '/pos': 'cart',
+        '/new_pos': 'cart',
         '/inventory': 'inventory',
         '/admin': 'admin',
         '/admin/users': 'user',
@@ -47,6 +49,7 @@ export default function Header(){
         '/admin/rol': 'rol',
         '/admin/report': 'report',
         '/admin/code': 'code',
+        
     }
 
     const curretnIcon = iconContent[currentPath] || 'archive' as IconName;
