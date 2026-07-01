@@ -15,7 +15,7 @@ export const routes: Route[] = [
     },
     {
         name: 'Punto de Venta',
-        path: '/pos',
+        path: '/new_pos',
         icon: 'cart',
     },
     {

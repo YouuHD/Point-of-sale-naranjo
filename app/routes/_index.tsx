@@ -57,7 +57,7 @@ export default function Index() {
 
     <Fragment>
       <MainLayout className="flex flex-col bg-[#f6f6f6] dark:bg-[#252525]" as="main" Header={<Fragment></Fragment>}>
-        <div className="grid w-full grid-cols-3 gap-12 p-10">
+        <div className="grid w-full grid-cols-3  gap-12 p-10">
           <CardChart textTitle="Ventas Totales" textDescription="$12,345 en los útimos 30 días" iconContent={<CiBoxes className="mr-3" />} textFooter="" texContent="" children={<LineChartComponent chartData={chartData3}/>} />
           <CardChart textTitle="Valor de Inventario" textDescription="$12,345 Nivel de existencia en los últimos 30 días" iconContent={<CiBoxes className="mr-3" />} textFooter="" texContent="" children={<BarChartComponent chartData={chartData}/>} />
           <CardChart textTitle="Nuevos Clientes" textDescription="123 nuevos clientes en los útimos 30 días" iconContent={<CiBoxes className="mr-3" />} textFooter="" texContent=""  children={<ScatterChartComponent chartData={chartData2}/>} />
